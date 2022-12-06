@@ -1,0 +1,41 @@
+.button{
+  background-color:#ff8e9c;
+  color: white;
+  width: 40%;
+  margin: 0 auto;
+  padding: .8em 1.6em .5em 1.6em;
+  border-radius: 20px;
+  text-align: center;
+  transition: background-color .2s ease;
+  cursor: pointer;
+}
+.button:hover, .button:active{
+  background-color: #ffa7b4;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg);}
+}
+.loader{
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+
+  border-top: 8px solid rgba(0,0,0,1);
+  border-left: 8px solid rgba(0,0,0,1);
+  border-right: 8px solid rgba(0,0,0,0);
+
+  animation: spin 0.575s infinite linear;
+}
+.free{
+  position: absolute;
+  width: 100%;
+  left: 0;
+  z-index: 1;
+}
+.free-top{
+  top: -4em;
+}
+.free-bot{
+  bottom: 0;
+}
